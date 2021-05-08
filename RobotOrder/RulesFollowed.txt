@@ -1,0 +1,36 @@
+This file is describe the locations where i have followed the robot rules.
+
+1. The robot should use the orders file (.csv ) and complete all the orders in the file. 
+-----Robot completed all the orders in the file
+
+2. Only the robot is allowed to get the orders file. You may not save the file manually on your computer.
+-----Robot downloads the orders file from the link provided by the assistant
+
+3. The robot should save each order HTML receipt as a PDF file.
+-----Robot created PDF file for each order in output/ receipts folder with the name of the PDF as the order number
+
+4. The robot should save a screenshot of each of the ordered robots.
+-----Robot created PNG file for each order in output/ screen folder with the name of the PNG file as the order number
+
+5. The robot should embed the screenshot of the robot to the PDF receipt.
+-----Robot embeds the screenshot of each order into the PDF file.
+
+6. The robot should create a ZIP archive of the receipts and the images. Store the archive in the output directory.
+-----Robot created Zip archive files called receipts.zip and screen.zip and stores it in the output file
+
+7. The robot should complete all the orders even when there are technical failures with the robot order website.
+-----Robot has a retry option while submitting the order therefore if there are any technical failures orders will be placed.
+
+8. The robot should read some data from a local vault. In this case, do not store sensitive data such as credentials in the vault. The purpose is to verify that you know how to use the vault.
+-----Robot get the URL of the website to place order from the vault there is also a local vault.json file stores in the root directory.
+
+9. The robot should use an assistant to ask some input from the human user, and then use that input some way.
+-----Robot get the link using the assistant from where the orders.csv file should be downloaded.
+
+10. The robot should be available in public GitHub repository.
+Store the local vault file in the robot project repository so that it does not require manual setup.
+----Robot is present in the GIT reprository
+
+11. It should be possible to get the robot from the public GitHub repository and run it without manual setup.
+----Yes it should be able to run.
+
